@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         ul li:hover{
            color: aqua; 
+        }
+        .btn{
+          background-color: white;
+          color: red;
+          font-size: 24-px;
+          padding: 6px 8px;
+          border-radius: 50%;
+          border: 2px solid white;
+          transition: all .2s ease-in-out;
+        }
+
+        .btn:hover{
+            background-color: transparent;
+            color: white;
+            transform: scale(1.o3);
         }
     </style>
 </head>
@@ -26,17 +42,17 @@
     <!-- header section -->
     <div class="h-screen bg-slate-500 px-20 flex items-center justify-around">
         <div class="w-1/2">
-            <h1 class="text-3xl font-bold">Hi. I'm Ukra.I design awesome websites.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quaerat nihil expedita veritatis sequi voluptas quas perspiciatis mollitia beatae maxime fuga vero pariatur porro molestias unde, alias nulla deleniti eum enim in? Nostrum sint fugiat sunt suscipit architecto, laudantium id ab voluptate aut illum? Ullam ut neque eveniet delectus consequuntur!
+            <h1 class="text-4xl text-white font-bold">Hi. <span class="text-red-700">I'm Ukra</span>.I design awesome websites.</h1>
+            <p class="text-slate-50 font-medium my-5 text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quaerat nihil expedita veritatis sequi voluptas quas perspiciatis mollitia beatae maxime fuga vero pariatur porro molestias unde, alias nulla deleniti eum enim in? Nostrum sint fugiat sunt suscipit architecto, laudantium id ab voluptate aut illum? Ullam ut neque eveniet delectus consequuntur!
             </p>
-            <div>
-                <button></button>
-                <p>Watch presentation video</p>
+            <div class="flex gap-4 items-center">
+                <button class="btn"><i class=""></i><i class="fa-solid fa-play"></i></button>
+                <p class="text-white underline">Watch presentation video</p>
             </div>
          </div>
-         <img class="w-96" src="/bg pic.png" alt="">
+         <img class="w-96" src="./new pic 12.png" alt="">
     </div>
     
 
 </body>
-</html><h1 class="text-3xl font-bold">Hi. I'm Ukra.I design awesome websites.</h1>
+</html>
