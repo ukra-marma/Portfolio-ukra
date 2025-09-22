@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        ul li:hover{
-           color: aqua; 
-        }
-        .btn{
-          background-color: white;
-          color: red;
-          font-size: 24-px;
-          padding: 6px 8px;
-          border-radius: 50%;
-          border: 2px solid white;
-          transition: all .2s ease-in-out;
+        ul li:hover {
+            color: aqua;
         }
 
-        .btn:hover{
+        .btn {
+            background-color: white;
+            color: red;
+            font-size: 24-px;
+            padding: 6px 8px;
+            border-radius: 50%;
+            border: 2px solid white;
+            transition: all .2s ease-in-out;
+        }
+
+        .btn:hover {
             background-color: transparent;
             color: white;
             transform: scale(1.o3);
         }
+        .card{
+            text-align: center;
+        }
+        .card i{
+            font-size: 40px;
+            color: rgb(141, 7, 7);
+        }
+        .card h2{
+            font-size: 32px;
+            color: white;
+            font-weight: 700;
+        }
+        .card p{
+            color:rgb(232,232,232) ;
+        }
     </style>
 </head>
+
 <body>
+    <!-- nav section -->
     <nav class="bg-black p-4 text-white flex items-center justify-around fixed w-full">
         <h1 class="text-3xl font-bold">Ukra</h1>
         <ul class="flex gap-16 text-xl font-medium">
@@ -42,17 +63,46 @@
     <!-- header section -->
     <div class="h-screen bg-slate-500 px-20 flex items-center justify-around">
         <div class="w-1/2">
-            <h1 class="text-4xl text-white font-bold">Hi. <span class="text-red-700">I'm Ukra</span>.I design awesome websites.</h1>
-            <p class="text-slate-50 font-medium my-5 text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quaerat nihil expedita veritatis sequi voluptas quas perspiciatis mollitia beatae maxime fuga vero pariatur porro molestias unde, alias nulla deleniti eum enim in? Nostrum sint fugiat sunt suscipit architecto, laudantium id ab voluptate aut illum? Ullam ut neque eveniet delectus consequuntur!
+            <h1 class="text-4xl text-white font-bold">Hi. <span class="text-red-700">I'm Ukra</span>.I design awesome
+                websites.</h1>
+            <p class="text-slate-50 font-medium my-5 text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ab quaerat nihil expedita veritatis sequi voluptas quas perspiciatis mollitia beatae maxime fuga vero
+                pariatur porro molestias unde, alias nulla deleniti eum enim in? Nostrum sint fugiat sunt suscipit
+                architecto, laudantium id ab voluptate aut illum? Ullam ut neque eveniet delectus consequuntur!
             </p>
             <div class="flex gap-4 items-center">
                 <button class="btn"><i class=""></i><i class="fa-solid fa-play"></i></button>
                 <p class="text-white underline">Watch presentation video</p>
             </div>
-         </div>
-         <img class="w-96" src="./new pic 12.png" alt="">
+        </div>
+        <img class="w-96" src="./new pic 12.png" alt="">
     </div>
-    
+
+    <!-- services section -->
+    <div class="bg-slate-700 flex flex-col gap-2 items-center py-16">
+        <h1 class="text-3xl font-bold text-white">What i do the best</h1>
+        <p class="text-slate-200">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, saepe?</p>
+        <div class="flex max-w-6xl">
+            <div class="card space-y-2">
+                <i class="fa-solid fa-medal"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, totam?</p>
+            </div>
+            <div class="card space-y-2">
+                <i class="fa-solid fa-gear"></i>
+                <h2>Web Devlopment</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, totam?</p>
+            </div>
+            <div class=" card space-y-2">
+                <i class="fa-solid fa-umbrella"></i>
+                <h2>Ux/Ui</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, totam?</p>
+            </div>
+        </div>
+    </div>
+
 
 </body>
+
 </html>
